@@ -44,6 +44,10 @@ export default {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
+        warning: { // Added warning color
+          DEFAULT: 'hsl(var(--warning))',
+          foreground: 'hsl(var(--warning-foreground))'
+        },
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
@@ -65,9 +69,12 @@ export default {
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				md: 'calc(var(--radius) - 2px)', // e.g., 12px - 2px = 10px
+				sm: 'calc(var(--radius) - 4px)'  // e.g., 12px - 4px = 8px
 			},
+      fontFamily: { // Added font family
+        sans: ['var(--font-sans)']
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
